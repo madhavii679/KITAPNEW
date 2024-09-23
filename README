@@ -1,0 +1,86 @@
+# AI-Driven Test Insights Generator
+
+## Overview
+This tool analyzes test execution data to provide insights and recommendations for improving test reliability and efficiency.
+It generates a comprehensive HTML report with visualizations, key insights, and actionable recommendations.
+
+## Features
+- Overall test execution insights
+- Pass rate trend analysis
+- Anomaly detection in test executions
+- Test flakiness analysis
+- Environment impact analysis
+- Code changes impact analysis
+- Future performance prediction
+
+## Directory Structure
+```
+ai_test_insights/
+│
+├── src/
+│   ├── main.py
+│   ├── config_manager.py
+│   ├── data_processor.py
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── overall_insights.py
+│   │   ├── pass_rate_trend.py
+│   │   ├── anomaly_detection.py
+│   │   ├── test_flakiness.py
+│   │   ├── environment_impact.py
+│   │   ├── code_changes_impact.py
+│   │   └── future_prediction.py
+│   └── report_generator.py
+│
+├── config/
+│   └── config.yaml
+│
+├── templates/
+│   └── report_template.html
+│
+├── data/
+│   └── test_execution_data.csv
+│
+├── output/
+│   └── ai_driven_test_insights_report.html
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+## Installation
+1. Ensure Python 3.7+ is installed on your system.
+2. Clone this repository:
+   ```
+   git clone [repository_url]
+   ```
+3. Navigate to the project directory:
+   ```
+   cd ai_test_insights
+   ```
+4. Install required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Configuration
+Update the `config/config.yaml` file with your specific settings. Key configurations include:
+- Data file path
+- Report template path
+- Output file path
+- Analysis parameters
+- Visualization settings
+- Thresholds for various metrics
+
+## Usage
+1. Place your test execution data CSV file in the `data/` directory.
+2. Update the `config/config.yaml` file with the correct data file name.
+3. Run the main script:
+   ```
+   python src/main.py
+   ```
+4. The generated report will be saved in the `output/` directory.
+
+## Support
+For any questions or issues, please contact [Your Contact Information].

@@ -1,0 +1,41 @@
+data_file: "updated_test_execution_data.csv"
+report_template: "report_insights_template.html"
+output_file: "ai_driven_test_insights_report.html"
+
+# Analysis parameters
+analysis:
+  anomaly_detection:
+    contamination: 0.05
+  test_flakiness:
+    top_flaky_tests: 5
+  future_prediction:
+    days: 30
+
+# Visualization settings
+visualization:
+  figure_size:
+    width: 12
+    height: 6
+  colors:
+    primary: "#2c3e50"
+    secondary: "#3498db"
+    tertiary: "#e74c3c"
+
+# Thresholds
+thresholds:
+  minimum_pass_rate: 95.0
+  flakiness:
+    low: 0.1
+    high: 0.4
+  large_change_lines: 500
+
+# Report customization
+report:
+  company_name: "Your Company Name"
+  logo_path: "path/to/logo.png"
+  title: "AI-Driven Test Insights & Recommendations"
+
+# Logging
+logging:
+  level: "INFO"
+  file_path: "ai_insights.log"

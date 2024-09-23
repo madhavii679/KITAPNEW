@@ -1,0 +1,48 @@
+# AI-Driven Test Insights Tool: Handover Instructions for KiTap
+
+Dear KiTap Team,
+
+We are pleased to provide you with the AI-Driven Test Insights Tool. This document outlines the steps to get started with the tool and customize it for your needs.
+
+## Getting Started
+
+1. System Requirements:
+   - Python 3.7 or higher
+   - 4GB RAM or more (8GB recommended for large datasets)
+   - 50MB free disk space (more may be needed depending on your data size)
+
+2. Installation:
+   - Follow the installation instructions in the README.md file.
+   - Ensure all dependencies are installed using the provided requirements.txt file.
+
+3. Initial Setup:
+   - Place your test execution data CSV file in the `data/` directory.
+   - Update the `config/config.yaml` file with your specific settings (a KiTap-specific template is provided).
+   - Ensure the KiTap logo is placed in the `assets/` directory as specified in the config file.
+
+4. Running the Tool:
+   - Execute the main script as described in the README.md file.
+   - The generated report will be saved in the `output/` directory.
+
+## Customization
+
+1. Branding:
+   - The provided config file doesn’t include KiTap's colors and logo path. Adjust as needed.
+   - You can modify the HTML template in `templates/report_template.html` for further branding customization.
+
+2. Analysis Parameters:
+   - Adjust thresholds and analysis parameters in the config file to match KiTap's specific quality standards and test environment.
+
+3. Data Format:
+   - Ensure your CSV data matches the expected format. Refer to the sample data file for the correct structure.
+
+## Support and Maintenance
+
+- The tool is designed to be self-contained and doesn't require external dependencies beyond the Python packages listed in requirements.txt.
+- For any issues, questions, or feature requests, please contact [Your Contact Information].
+- We recommend reviewing and potentially updating the tool every 6 months to ensure it remains aligned with your evolving testing processes.
+
+We are confident this tool will provide valuable insights into your test processes. Please don't hesitate to reach out if you need any further assistance.
+
+Best regards,
+[Your Name/Team]
